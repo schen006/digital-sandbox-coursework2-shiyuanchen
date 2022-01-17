@@ -1,0 +1,2045 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Pandemic tsunami: Delta combines with Omicron united to celebrate New Year!</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- This is CSS -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+        .twitter {
+        	width: 100%;
+					height: 420px;
+				text-align: center;
+        }
+				.twitter1 {
+					width: 400px; height: 420px; float: left;
+				}
+				.twitter2 {
+					width: 400px; height: 420px; float: right;
+				}
+				.alignleft {vertical-align:middle; text-align:center;
+				}
+
+		</style>
+		<!-- this echart JavaScript -->
+	 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+	 <script type="text/javascript" src="js/starcanvas.js"></script>
+ 	 </head>
+
+	 <body class="is-preload">
+<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+        <!-- <img src="images/virus03.jpg"   width="1080px" uk-cover> -->
+
+<!-- Intro -->
+					<div id="intro">
+						<h1>Pandemic scare: <br />
+						Delta and Omicron unite to celebrate New Year!</h1>
+						<p>A twitter analysis by <a href="https://twitter.com/ShiyuanChen914">ShiyuanChen</a> <br />
+					  </p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+<!-- Main -->
+
+					<div id="main">
+	<!-- Featured Post -->
+							<article class="post featured">
+								<!-- <header class="major"> -->
+									<h2>Background of Delmicron</h2>
+									<p style="text-align:center;">January 01, 2022</p>
+               <div class="twitter">
+								 <div class="twitter2">
+									<p style="width:380px; line-height: 30px;"> <i>A new super-variant could be created if Omicron and Delta infect someone at the same time</i>, a possibility highlighted by<b> Paul Burton </b>, chief medical officer at Modena. Although some researchers immediately pointed out that the new coronavirus evolved by mutating to produce new variants, not by swapping genes between viruses. But this still ignited a public panic and caused a big twitter debate, so let's now take a look at the interesting data.</p></div>
+								<div class="twiiter1"> <img src="images/delmicron03 (2).jpg" style="width:460px;" />
+								</div>
+             </div>
+
+<!-- Post -->
+									<dl>
+											<h2>Twitter data Analysis</h2>
+										<dd>
+											<p>The report analyzed tweets about #Delmicron in detail. The tweets obtained were collected using TAGS V6.1, and the time span was from 14:47pm on December 27, 2021 to 23:59pm on January 4, 2022. Of the 18,415 tweets collected during the week, 81.53% were retweeted. However, only 4,172 tweets accounted for 18.47 percent of the total.</p>
+										</dd>
+
+										<!-- 这份报告详细分析了有关#Delmicron的推文。所得到的tweets是使用TAGS V6.1收集，时间跨度为2021年12月27日下午14:47pm到2022年1月4日23:59pm。在这一周内收集到的18,415条推文中，有81.53%是转发的。然而，发推的数量只有4172条占总数的18.47%. -->
+
+										<h3>Tweet to Retweet Ratio</h3>
+
+<!-- pie char tweets and retweets retio -->
+        	<div id="retio" style="width:100%; height: 400px;"></div>
+							<script type="text/javascript">
+
+							var myChart = echarts.init(document.getElementById('retio'));
+
+
+				      var app = {};
+							var option;
+
+							option = {
+							  tooltip: {
+							    trigger: 'item'
+							  },
+							  legend: {
+							    top: '95%',
+							    left: 'center'
+							  },
+							  series: [
+							    {
+							      // name: ' ',
+							      type: 'pie',
+							      radius: ['40%', '70%'],
+							      avoidLabelOverlap: false,
+							      label: {
+							        show: true,
+							        position: 'inside',
+		                formatter: "{d}%",
+		                textStyle: {
+		                    color: '#000000',
+												fontSize: '15'
+											}
+							      },
+							      emphasis: {
+							        label: {
+							          show: true,
+							          fontSize: '20',
+							          fontWeight: 'bold'
+							        }
+							      },
+							      labelLine: {
+							        show: false
+							      },
+							      data: [
+							        { value: 4172, name: 'Tweets' },
+							        { value: 18415, name: 'Retweets' },
+							      ]
+							    }
+							  ]
+							};
+							option && myChart.setOption(option);
+
+					</script>
+
+			  	<hr />
+
+				          <h3>The overall trend</h3>
+									<dd>
+									<p>In the bar chart below we can see the change in the number of tweets discussing delmicron over a 9 day period. 27th and 28th were the peak of discussion and then it started to fall off a cliff. <br />Interestingly, there were 13 times as many discussions on the topic in 8 hours on the 27th as there were all day on the 29th; 45 times as many tweets as on the 4th.</p>
+									<!-- 在下面这张条形图中我们可以看到9天内讨论delmicron的推特数据变化。27th和28th是话题讨论的高峰，随后便开始断崖式下降。有意思的是27号8小时话题讨论的数据量是29号全天的13倍；是四号推文数量的45倍。
+									更有力一点的可能性关于数据波动的原因来自于28号 几点几点某某人的官方辟谣让人们打消了自己心中的顾虑。 -->
+									</dd>
+
+<!-- bar chart  -->
+								<div id="container" style="height: 400px"></div>
+									<script type="text/javascript">
+
+									var dom = document.getElementById("container");
+									var myChart = echarts.init(dom);
+									var app = {};
+
+									var option;
+
+									option = {
+									tooltip: {
+										  trigger: 'item'
+									  },
+									  xAxis: {
+									    type: 'category',
+									    data: ['14:47 27 Dec', '28 Dec', '29 Dec', '30 Dec', '31 Dec', '01 Jan', '02 Jan','03 Jan','04 Jan']
+									  },
+									  yAxis: {
+									    type: 'value'
+									  },
+									  series: [
+									    {
+									    data: [8978,5106,709,338,243,235,257,294,200],
+									    type: 'bar',
+									    showBackground: true,
+									    backgroundStyle: {
+									    color: 'rgba(0, 0, 0, 0.01)'
+											      }
+											    }
+											  ]
+											};
+										option && myChart.setOption(option);
+								</script>
+
+<br />
+										<h3>TWEETS PER MINUTE</h3>
+										<dd>
+											<p>This line chart shows the number of tweets per minute from 3:00pm to 6:00pm on the 27th, during the peak of the discussion on delmicron. It is easy to see that the maximum number of tweets per minute is 44 and the minimum is 15. The average is about 27 tweets per minute.</p>
+										</dd>
+										<!-- 该line chart图表展示了27号下午3:00~6:00有关delmicron话题讨论高峰期每分钟推文的数量变化。从中我们不难看出每分钟最高可以达到44条，最低为15条。平均每分钟约27条。 -->
+
+<!-- line chart per min -->
+					        <div id="chart1"></div>
+					        <script type="text/javascript">
+
+					          var dom = document.getElementById("chart1");
+					          var myChart = echarts.init(dom);
+					          var app = {};
+
+					          var option;
+					          let dates = [
+					                        '15:00',
+														      '15:01',
+														      '15:02',
+														      '15:03',
+														      '15:04',
+														      '15:05',
+														      '15:06',
+														      '15:07',
+														      '15:08',
+														      '15:09',
+														      '15:10',
+														      '15:11',
+														      '15:12',
+														      '15:13',
+														      '15:14',
+														      '15:15',
+														      '15:16',
+														      '15:17',
+														      '15:18',
+														      '15:19',
+														      '15:20',
+														      '15:21',
+														      '15:22',
+														      '15:23',
+														      '15:24',
+														      '15:25',
+														      '15:26',
+														      '15:27',
+														      '15:28',
+														      '15:29',
+														      '15:30',
+														      '15:31',
+														      '15:32',
+														      '15:33',
+														      '15:34',
+														      '15:35',
+														      '15:36',
+														      '15:37',
+														      '15:38',
+														      '15:39',
+														      '15:40',
+														      '15:41',
+														      '15:42',
+														      '15:43',
+														      '15:44',
+														      '15:45',
+														      '15:46',
+														      '15:47',
+														      '15:48',
+														      '15:49',
+														      '15:50',
+														      '15:51',
+														      '15:52',
+														      '15:53',
+														      '15:54',
+														      '15:55',
+														      '15:56',
+														      '15:57',
+														      '15:58',
+														      '15:59',
+														      '16:00',
+														      '16:01',
+														      '16:02',
+														      '16:03',
+														      '16:04',
+														      '16:05',
+														      '16:06',
+														      '16:07',
+														      '16:08',
+														      '16:09',
+														      '16:10',
+														      '16:11',
+														      '16:12',
+														      '16:13',
+														      '16:14',
+														      '16:15',
+														      '16:16',
+														      '16:17',
+														      '16:18',
+														      '16:19',
+														      '16:20',
+														      '16:21',
+														      '16:22',
+														      '16:23',
+														      '16:24',
+														      '16:25',
+														      '16:26',
+														      '16:27',
+														      '16:28',
+														      '16:29',
+														      '16:30',
+														      '16:31',
+														      '16:32',
+														      '16:33',
+														      '16:34',
+														      '16:35',
+														      '16:36',
+														      '16:37',
+														      '16:38',
+														      '16:39',
+														      '16:40',
+														      '16:41',
+														      '16:42',
+														      '16:43',
+														      '16:44',
+														      '16:45',
+														      '16:46',
+														      '16:47',
+														      '16:48',
+														      '16:49',
+														      '16:50',
+														      '16:51',
+														      '16:52',
+														      '16:53',
+														      '16:54',
+														      '16:55',
+														      '16:56',
+														      '16:57',
+														      '16:58',
+														      '16:59',
+														      '17:00',
+														      '17:01',
+														      '17:02',
+														      '17:03',
+														      '17:04',
+														      '17:05',
+														      '17:06',
+														      '17:07',
+														      '17:08',
+														      '17:09',
+														      '17:10',
+														      '17:11',
+														      '17:12',
+														      '17:13',
+														      '17:14',
+														      '17:15',
+														      '17:16',
+														      '17:17',
+														      '17:18',
+														      '17:19',
+														      '17:20',
+														      '17:21',
+														      '17:22',
+														      '17:23',
+														      '17:24',
+														      '17:25',
+														      '17:26',
+														      '17:27',
+														      '17:28',
+														      '17:29',
+														      '17:30',
+														      '17:31',
+														      '17:32',
+														      '17:33',
+														      '17:34',
+														      '17:35',
+														      '17:36',
+														      '17:37',
+														      '17:38',
+														      '17:39',
+														      '17:40',
+														      '17:41',
+														      '17:42',
+														      '17:43',
+														      '17:44',
+														      '17:45',
+														      '17:46',
+														      '17:47',
+														      '17:48',
+														      '17:49',
+														      '17:50',
+														      '17:51',
+														      '17:52',
+														      '17:53',
+														      '17:54',
+														      '17:55',
+														      '17:56',
+														      '17:57',
+														      '17:58',
+														      '17:59',
+														      '18:00'
+
+					          ];
+					          let values = [
+					          26,32,16,30,21,18,30,27,26,32,28,37,36,18,26,21,21,28,31,30,27,22,26,30,40,33,28,35,32,17,20,25,29,37,33,34,22,20,21,23,20,24,31,22,24,28,21,27,28,
+										37,27,22,30,21,23,32,30,18,31,36,27,35,40,25,25,22,18,22,28,38,25,44,26,28,27,21,32,36,26,38,33,29,38,33,19,18,28,31,33,34,31,37,30,24,31,28,31,25,
+										30,		23,21,31,23,36,21,26,28,15,26,22,18,21,33,26,28,33,19,32,33,23,36,34,34,25,30,28,32,23,19,29,34,32,30,32,28,32,26,32,22,31,36,37,28,32,28,30,16,
+										26,29,
+										23,25,25,28,32,28,16,25,28,26,24,32,36,28,26,25,20,15,26,22,22,17,21,25,32,26,31,18,20];
+
+					          option = {
+					            title: {
+					              text: ''
+					            },
+					             tooltip: {
+														    trigger: 'axis',
+														  },
+					            xAxis: {
+					              type: 'category',
+					              data: dates
+					            },
+					            yAxis: {
+					                type: 'value'
+					            },
+					            series: [
+					              {
+					                data: values,
+					                type: 'line',
+					                showSymbol: false
+					              }
+					            ]
+					          };
+
+					          if (option && typeof option === 'object') {
+					            myChart.setOption(option);
+					          }
+
+					          window.onresize = function() {
+					            myChart.resize();
+					          };
+
+					          myChart.resize({
+					            height: 400
+					          });
+
+					      </script>
+
+<br />
+<!-- line chart compare data-->
+									<h3>TWEET TO RETWEET PER MINUTE</h3>
+									<dd>
+										<p>
+											The line chat below further compares the number of tweet retweets and original tweets from 3:00 to 6:00 p.m. on the 27th. The plurality of tweets per minute is 21; the overall average is about 20; the median is 20. The plurality of original tweets is 7; the overall average is about 7.3; the median is 7. From this we can see that there is an overall positive correlation between tweet retweet rate and original tweet rate, although there are occasional exceptions. At 16:11 the retweet rate reaches 39 tweets per minute, with an average of 1.53 seconds before a tweet about delmicron is retweeted, while the original tweet figure is at its lowest, with an average of 12 seconds before an original tweet is sent, showing a negative correlation.
+										</p>
+									</dd>
+										<!-- 下面这张line chat进一步对比了27号下午3:00~6:00推文转发量和原创推文发推量。每分钟推文转发率的众数是21; 整体平均数约等于20; 中位数是20。原创推文发推率的众数是7;整体平均数约为7.3; 中位数是7。从中我们可以看出，推文转发率与原创推文率之间整体呈现出一种正相关的关系，不过偶尔也有例外。在16；11分推文转发率达到39条每分钟，平均1.53秒就有一条有关delmicron的推文被转发时，反而是原创推文数据最低的时候，平均12秒才会有一条原创推文被发出，呈现一种负相关的关系。  -->
+
+
+
+									<div id="linecompare" style="width:100%; height: 600px; " ></div>
+											<script type="text/javascript">
+
+											var myChart = echarts.init(document.getElementById('linecompare'));
+
+
+								          var app = {};
+
+													var option;
+
+													option = {
+													  title: {
+													    text: ''
+													  },
+													  tooltip: {
+													    trigger: 'axis'
+													  },
+													  legend: {
+													    data: ['Tweets', 'Retweets']
+													  },
+													  grid: {
+													    left: '3%',
+													    right: '4%',
+													    bottom: '3%',
+													    containLabel: true
+													  },
+													  // toolbox: {
+													  //   feature: {
+													  //     saveAsImage: {}
+													  //   }
+													  // },
+													  xAxis: {
+													    type: 'category',
+													    boundaryGap: false,
+													    data: [
+													      '15:00',
+													      '15:01',
+													      '15:02',
+													      '15:03',
+													      '15:04',
+													      '15:05',
+													      '15:06',
+													      '15:07',
+													      '15:08',
+													      '15:09',
+													      '15:10',
+													      '15:11',
+													      '15:12',
+													      '15:13',
+													      '15:14',
+													      '15:15',
+													      '15:16',
+													      '15:17',
+													      '15:18',
+													      '15:19',
+													      '15:20',
+													      '15:21',
+													      '15:22',
+													      '15:23',
+													      '15:24',
+													      '15:25',
+													      '15:26',
+													      '15:27',
+													      '15:28',
+													      '15:29',
+													      '15:30',
+													      '15:31',
+													      '15:32',
+													      '15:33',
+													      '15:34',
+													      '15:35',
+													      '15:36',
+													      '15:37',
+													      '15:38',
+													      '15:39',
+													      '15:40',
+													      '15:41',
+													      '15:42',
+													      '15:43',
+													      '15:44',
+													      '15:45',
+													      '15:46',
+													      '15:47',
+													      '15:48',
+													      '15:49',
+													      '15:50',
+													      '15:51',
+													      '15:52',
+													      '15:53',
+													      '15:54',
+													      '15:55',
+													      '15:56',
+													      '15:57',
+													      '15:58',
+													      '15:59',
+													      '16:00',
+													      '16:01',
+													      '16:02',
+													      '16:03',
+													      '16:04',
+													      '16:05',
+													      '16:06',
+													      '16:07',
+													      '16:08',
+													      '16:09',
+													      '16:10',
+													      '16:11',
+													      '16:12',
+													      '16:13',
+													      '16:14',
+													      '16:15',
+													      '16:16',
+													      '16:17',
+													      '16:18',
+													      '16:19',
+													      '16:20',
+													      '16:21',
+													      '16:22',
+													      '16:23',
+													      '16:24',
+													      '16:25',
+													      '16:26',
+													      '16:27',
+													      '16:28',
+													      '16:29',
+													      '16:30',
+													      '16:31',
+													      '16:32',
+													      '16:33',
+													      '16:34',
+													      '16:35',
+													      '16:36',
+													      '16:37',
+													      '16:38',
+													      '16:39',
+													      '16:40',
+													      '16:41',
+													      '16:42',
+													      '16:43',
+													      '16:44',
+													      '16:45',
+													      '16:46',
+													      '16:47',
+													      '16:48',
+													      '16:49',
+													      '16:50',
+													      '16:51',
+													      '16:52',
+													      '16:53',
+													      '16:54',
+													      '16:55',
+													      '16:56',
+													      '16:57',
+													      '16:58',
+													      '16:59',
+													      '17:00',
+													      '17:01',
+													      '17:02',
+													      '17:03',
+													      '17:04',
+													      '17:05',
+													      '17:06',
+													      '17:07',
+													      '17:08',
+													      '17:09',
+													      '17:10',
+													      '17:11',
+													      '17:12',
+													      '17:13',
+													      '17:14',
+													      '17:15',
+													      '17:16',
+													      '17:17',
+													      '17:18',
+													      '17:19',
+													      '17:20',
+													      '17:21',
+													      '17:22',
+													      '17:23',
+													      '17:24',
+													      '17:25',
+													      '17:26',
+													      '17:27',
+													      '17:28',
+													      '17:29',
+													      '17:30',
+													      '17:31',
+													      '17:32',
+													      '17:33',
+													      '17:34',
+													      '17:35',
+													      '17:36',
+													      '17:37',
+													      '17:38',
+													      '17:39',
+													      '17:40',
+													      '17:41',
+													      '17:42',
+													      '17:43',
+													      '17:44',
+													      '17:45',
+													      '17:46',
+													      '17:47',
+													      '17:48',
+													      '17:49',
+													      '17:50',
+													      '17:51',
+													      '17:52',
+													      '17:53',
+													      '17:54',
+													      '17:55',
+													      '17:56',
+													      '17:57',
+													      '17:58',
+													      '17:59',
+													      '18:00'
+													    ]
+													  },
+													  yAxis: {
+													    type: 'value'
+													  },
+													  series: [
+													    {
+													      name: 'Tweets',
+													      type: 'line',
+													      stack: 'Total',
+													      data: [
+													        7, 13, 5, 9, 6, 9, 11, 4, 8, 4, 2, 11, 7, 2, 6, 5, 6, 5, 9, 8, 6, 8, 8,
+													        13, 8, 9, 8, 12, 13, 6, 6, 7, 9, 7, 13, 11, 7, 8, 6, 10, 10, 7, 13, 8,
+													        6, 9, 7, 9, 7, 9, 4, 4, 9, 8, 3, 15, 7, 6, 11, 10, 9, 9, 5, 5, 8, 3, 7,
+													        12, 9, 11, 4, 5, 3, 3, 8, 5, 11, 10, 9, 11, 10, 4, 14, 13, 6, 6, 9, 6,
+													        14, 11, 5, 11, 7, 7, 5, 7, 7, 4, 3, 2, 7, 13, 3, 7, 8, 8, 4, 5, 7, 7, 6,
+													        5, 11, 9, 8, 7, 8, 11, 9, 9, 11, 6, 7, 5, 7, 7, 12, 7, 4, 7, 6, 5, 7, 8,
+													        7, 4, 3, 5, 3, 11, 12, 7, 11, 12, 6, 7, 4, 4, 6, 8, 3, 4, 8, 7, 10, 7,
+													        2, 6, 5, 8, 9, 8, 7, 11, 9, 5, 6, 6, 3, 9, 5, 6, 3, 6, 7, 8, 5, 3, 4, 3
+													      ]
+													    },
+													    {
+													      name: 'Retweets',
+													      type: 'line',
+													      stack: 'Total',
+													      data: [
+													        19, 19, 11, 21, 15, 9, 19, 23, 18, 28, 26, 26, 29, 16, 20, 16, 15, 23,
+													        22, 22, 21, 14, 18, 17, 32, 24, 20, 23, 19, 11, 14, 18, 20, 30, 20, 23,
+													        15, 12, 15, 13, 10, 17, 18, 14, 18, 19, 14, 18, 21, 28, 23, 18, 21, 13,
+													        20, 17, 23, 12, 20, 26, 18, 26, 35, 20, 17, 19, 11, 10, 19, 27, 21, 39,
+													        23, 25, 19, 16, 21, 26, 17, 27, 23, 25, 24, 20, 13, 12, 19, 25, 19, 23,
+													        26, 26, 23, 17, 26, 21, 24, 21, 27, 21, 14, 18, 20, 29, 13, 18, 24, 10,
+													        19, 15, 12, 16, 22, 17, 20, 26, 11, 21, 24, 14, 25, 28, 27, 20, 23, 21,
+													        20, 16, 15, 22, 28, 27, 23, 24, 21, 28, 23, 27, 19, 20, 24, 30, 17, 20,
+													        22, 23, 19, 12, 20, 21, 20, 21, 17, 21, 22, 21, 14, 19, 23, 18, 15, 24,
+													        29, 17, 18, 21, 19, 14, 12, 17, 17, 16, 14, 15, 18, 24, 21, 28, 14, 17
+													      ]
+													    }
+													  ]
+													};
+
+													option && myChart.setOption(option);
+
+													</script>
+
+<!-- 最高转推1 -->
+<br />
+
+                 <p>Of all the retweets, the tweet about delmicron by tweeter Ali Osman Önder reached the highest number of retweets at 682 and received 2,875 likes. The blogger is a journalist and writer from Istanbul, Turkey, and currently has 65.4k followers. It's worth mentioning that he published three other tweets that also squeezed into the #2 and #3 and #6 spots for the highest tweets. (Statistics as of 15 January 2022)</p>
+
+								 <!-- 在所有转推的推文中，由推主 Ali Osman Önder所发表的有关delmicron的推文达到了最高的转推数量682次，并获得2875次喜欢。该名博主是一名记者兼作家，来自土耳其伊斯坦布尔，目前拥有65.4k粉丝。值得一提的是，他发表的另外三条推文，也挤进了最高推文的第2名和第3名和第6名。（数据统计截止至2022年1月15日） -->
+				<div align="center">
+					<div>
+						  <p>
+									<blockquote class="twitter-tweet"><p lang="tr" dir="ltr">Küçük çocuk yazdığı günlüğü göstermiş annesine. Sınıfta maske takmayan çocuğu çöpün yanına oturtmak nedir ya? Ruh hastası mısınız? Maskeye tapan bir güruh oluştu. Ağızlarından atmadıkları gibi küçücük çocukları azarlayıp mikrop muamelesi. Böyle durumda ulaşın bize. <a href="https://twitter.com/hashtag/Delmicron?src=hash&amp;ref_src=twsrc%5Etfw">#Delmicron</a>&mdash; Ali Osman Önder (@aliosmanonder34) <a href="https://twitter.com/aliosmanonder34/status/1475615419595644931?ref_src=twsrc%5Etfw">December 27, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+								</p>
+				   </div>
+
+	<!-- Blockquote -->
+									<h4>Translate</h4>
+									<blockquote> The little boy showed his mother the diary he had written. What is it with sitting a child who does not wear a mask in the classroom next to the garbage? Are you mentally ill? A mask-worshipping mob formed. As they do not throw it out of their mouth, they scold little children and treat them as germs. In this case, contact us. #Delmicron.</blockquote>
+
+<hr />
+<!-- Histogram Of Tweeters Volumes  -->
+		  		<div style="width: 900px; height: 500px;">
+						<h3 style="margin: 0px; line-height: 11px;">Histogram Of Tweeters Volumes</h3>
+						<div style="width: 400px; height: 500px; float: left;">
+						 <div id="bar3" style="width:100%; height: 500px;" ></div>
+							<script type="text/javascript">
+
+							var myChart = echarts.init(document.getElementById('bar3'));
+							var app = {};
+
+									var option;
+
+									option = {
+									 tooltip: {
+										  trigger: 'item'
+									  },
+
+									  xAxis: {
+									    type: 'category',
+									    data: ['1', '2', '3', '4', '≥5', '≥10', '≥20','≥50','≥100']
+									  },
+									  yAxis: {
+									    type: 'value'
+									  },
+									  series: [
+									    {
+									      data: [
+													{
+					          value: 6587,
+					          itemStyle: {
+					            color: '#9FE080'
+					          }
+					        },1265,756,384,234,141,40,2,1],
+									      type: 'bar',
+									      showBackground: true,
+									      backgroundStyle: {
+									        color: 'rgba(0, 0, 0, 0.01)'
+									      }
+									    }
+									  ]
+									};
+							option && myChart.setOption(option);
+		   </script>
+		 </div>
+		 <div style="width: 500px; height: 500px; float: right;">
+<br />
+
+									<dd>
+									<p style="line-height:38px;">A total of 9,410 Twitter users wrote and retweeted tweets about delmicron throughout the course of data collection from December 27 to January 4. On average, each user contributed two tweets. In addition, two people tweeted more than 50 tweets during this period: @nesrintazegul1 tweeted 96 tweets, 48 times the average number of tweets; @gulbahar_ozacar tweeted 81 tweets, 40.5 times the average number of tweets; and one person tweeted more than 100 tweets. He is the top tweeter @MerveKs07715294 who posted 175 tweets over the eight days, and 87.5 times the average number of tweets.</p>
+									</dd>
+					<!-- 在整个12月27号到1月4号数据收集的过程中,总共有9410名推特用户撰写和转发了有关delmicron的推文。平均每个用户贡献两条推文。其中6587名用户贡献了一条推文, 占据总发推人数的百分之70。另外，在这期间发推总数量大于50条的有两个人，@nesrintazegul1发布推文96条，高于平均发推数量48倍; @gulbahar_ozacar发布推文81条高于平均发推数40.5倍; 发推总数量大于100条的有一人, 他是顶级发推者@MerveKs07715294，在这八天中发布推文175条，高于平均发推数量87.5倍. -->
+	 </div>
+ </div>
+<hr />
+
+								<h3>TOP Ten TWEETERS BY TWEETS AND RETWEETS</h3>
+								<dd>
+									<p>Among the top ten active tweeters on the delmicron topic, there is a polarisation in the number of tweets written and retweeted. The top retweeters do not write tweets, while the top writers do not retweet any tweets. In the bar chart below we can see that the top original tweeter is @MerveKs07715294 with 175 tweets; the top retweeter is @nesrintazegul1, followed by @gulbahar_ozacar. They have retweeted 96 and 81 tweets respectively. However, the tweeter @maskesizprime was a mixed bag of retweeters and writers, writing and retweeting 16 tweets about delmicron respectively. Besides, another retweeter and writer was @maskesizprime.</p>
+								</dd>
+								<!-- 在delmicron话题下活跃的前十名推特用户中，推文撰写量和转发量的数据呈现一种两极化的趋势。推文转发量第一的不会撰写推文，然而撰写推文量第一的却不会转发任何推文。从下面的bar chart中我们可以看到原创推文数量最多的是@MerveKs07715294 with 175条推文; 转发推文数量最多的是@nesrintazegul1, 其次是@gulbahar_ozacar. 他们各自转发了96条和81条推文。然而，推特用户@maskesizprime属于转发和撰写都参半的那种类型，他分别撰写了和转发了16条有关delmicron的推文。另一个转发与撰写都有参与的是@maskesizprime。 -->
+
+
+	<div id="retio2" style="width:100%; height: 400px; " ></div>
+							<script type="text/javascript">
+
+							var myChart = echarts.init(document.getElementById('retio2'));
+							option = {
+							  title: { },
+							  tooltip: {
+							    trigger: 'axis',
+							    axisPointer: {
+							      type: 'shadow'
+							    }
+							  },
+							  	legend: {
+							    top: '5%',
+							    left: 'center'
+							  },
+							  grid: {
+							    left: '3%',
+							    right: '4%',
+							    bottom: '3%',
+							    containLabel: true
+							  },
+							  xAxis: {
+							    type: 'value',
+							    boundaryGap: [0, 0.01]
+							  },
+							  yAxis: {
+							    type: 'category',
+							    data: ['@MerveKs07715294','@nesrintazegul1','@gulbahar_ozacar','@_gl0r1a_0','@edip29903904','@YukselSoganc','@YusufAy30580588','@demirmadeni','@ibrahim7039','@telmaskeli'
+							]
+							  },
+							  series: [
+							    {
+							      name: 'Tweets',
+							      type: 'bar',
+										stack: 'total',
+							      data: [175,0,0,0,0,0,9,0,0,16
+							      ]
+							    },
+							    {
+							      name: 'Retweets',
+										stack: 'total',
+							      type: 'bar',
+
+							      data: [0,96,81,40,39,38,29,36,35,16
+							]
+							    }
+							  ]
+							};
+							option && myChart.setOption(option);
+
+					</script>
+
+<hr />
+
+<!-- Table -->
+					<h3>TOP 10 TWEETERS BOT ANALYSIS</h3>
+					<dd>
+						<p>Among the top 10 tweeters, three are suspected to be bots by the online 'Botometer' tool: @MerveKs07715294, demirmadeni, and @ibrahim7039. @MerveKs07715294 is one of the top tweeters, with 175 tweets and a bot probability of 3.4 of 5. The other tweeter @ibrahim7039, has 35 tweets and a bot probability of 4.1 of 5.</p>
+					</dd>
+					<!-- 在前10名推文发布者当中，有三名被 online ‘Botometer’ tool怀疑为机器人，他们分别是MerveKs07715294、demirmadeni、ibrahim7039。MerveKs07715294属于顶级发推者，他发布了175条推文，机器人可能性达到了3.4。另外一名ibrahim7039发推35条，机器人可能性达到了4.1。 -->
+<br />
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>IDName</th>
+													<th style="vertical-align:middle; text-align:left;">Total tweets</th>
+													<th style="vertical-align:middle; text-align:left;">Botometer Score</th>
+													<th style="vertical-align:middle; text-align:right;">Bot?</th>
+												</tr>
+											</thead>
+											<tbody>
+
+												<tr>
+													<td style="vertical-align:middle; text-align:left;">@MerveKs07715294</td>
+													<td style="vertical-align:middle; text-align:left;">175</td>
+													<td style="vertical-align:middle; text-align:left;"><canvas width="150px" height="20px" id="myCanvas"></canvas>
+														3.4 /5
+													<script>
+														  function showRatingStars(myCanvas, rating, counts, size, style) {
+
+									            var context = myCanvas.getContext('2d');
+									            var xStart = rating * size;
+									            var yStart = 0;
+									            var xEnd = (Math.ceil(rating) + 1) * size;
+									            var yEnd = 0;
+									            var radius = size / 2;
+
+									            var linear = context.createLinearGradient(xStart, yStart, xEnd, yEnd);
+									            linear.addColorStop(0, style.fillColor);
+									            linear.addColorStop(0.01, style.spaceColor);
+									            linear.addColorStop(1, style.spaceColor);
+									            context.fillStyle = linear;
+									            context.strokeStyle = style.borderColor;
+									            context.lineWidth = 1;
+									            var x = radius,
+									                y = 0;
+									            for (var i = 0; i < counts; i++) {
+									                context.beginPath();
+									                var x1 = size * Math.sin(Math.PI / 10);
+									                var h1 = size * Math.cos(Math.PI / 10);
+									                var x2 = radius;
+									                var h2 = radius * Math.tan(Math.PI / 5);
+									                context.lineTo(x + x1, y + h1);
+									                context.lineTo(x - radius, y + h2);
+									                context.lineTo(x + radius, y + h2);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x, y);
+									                context.closePath();
+									                context.stroke();
+									                context.fill();
+									                x = (i + 1.5) * size;
+									                y = 0;
+									                context.moveTo(x, y);
+													            }
+													        }
+
+													        var size = 22;
+													        var rating = 3.4;
+													        var counts = 5;
+													        var style = {
+													            borderColor: "#FEDB5F",
+													            fillColor: "#FEDB5F",
+													            spaceColor: "#FFFFFF"
+													        };
+
+													        var myCanvas = document.getElementById("myCanvas");
+													        showRatingStars(myCanvas, rating, counts, size, style);
+																				</script>
+														      </td>
+															    <td style="vertical-align:middle; text-align:right;">Likely</td>
+																	</tr>
+
+
+												<tr>
+													<td style="vertical-align:middle; text-align:left;">@nesrintazegul1</td>
+													<td style="vertical-align:middle; text-align:left;">96</td>
+													<td style="vertical-align:middle; text-align:left;">
+														<canvas width="150px" height="20px" id="myCanvas2"></canvas>
+														2.0 /5
+													 <script>
+														  function showRatingStars(myCanvas, rating, counts, size, style) {
+
+									            var context = myCanvas.getContext('2d');
+									            var xStart = rating * size;
+									            var yStart = 0;
+									            var xEnd = (Math.ceil(rating) + 1) * size;
+									            var yEnd = 0;
+									            var radius = size / 2;
+
+									            var linear = context.createLinearGradient(xStart, yStart, xEnd, yEnd);
+									            linear.addColorStop(0, style.fillColor);
+									            linear.addColorStop(0.01, style.spaceColor);
+									            linear.addColorStop(1, style.spaceColor);
+									            context.fillStyle = linear;
+									            context.strokeStyle = style.borderColor;
+									            context.lineWidth = 1;
+									            var x = radius,
+									                y = 0;
+									            for (var i = 0; i < counts; i++) {
+									                context.beginPath();
+									                var x1 = size * Math.sin(Math.PI / 10);
+									                var h1 = size * Math.cos(Math.PI / 10);
+									                var x2 = radius;
+									                var h2 = radius * Math.tan(Math.PI / 5);
+									                context.lineTo(x + x1, y + h1);
+									                context.lineTo(x - radius, y + h2);
+									                context.lineTo(x + radius, y + h2);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x, y);
+									                context.closePath();
+									                context.stroke();
+									                context.fill();
+									                x = (i + 1.5) * size;
+									                y = 0;
+									                context.moveTo(x, y);
+													            }
+													        }
+
+													        var size = 22;
+													        var rating = 2.0;
+													        var counts = 5;
+													        var style = {
+													            borderColor: "#9FE080",
+													            fillColor: "#9FE080",
+													            spaceColor: "#FFFFFF"
+													        };
+
+													        var myCanvas = document.getElementById("myCanvas2");
+													        showRatingStars(myCanvas, rating, counts, size, style);
+
+														    	</script>
+														    </td>
+																	<td style="vertical-align:middle; text-align:right;">Unlikely</td>
+																</tr>
+
+
+												<tr>
+													<td style="vertical-align:middle; text-align:left;">@gulbahar_ozacar</td>
+													<td style="vertical-align:middle; text-align:left;">81</td>
+													<td style="vertical-align:middle; text-align:left;"><canvas width="150px" height="20px" id="myCanvas3"></canvas>
+														1.8 /5
+													 <script>
+														  function showRatingStars(myCanvas, rating, counts, size, style) {
+
+									            var context = myCanvas.getContext('2d');
+									            var xStart = rating * size;
+									            var yStart = 0;
+									            var xEnd = (Math.ceil(rating) + 1) * size;
+									            var yEnd = 0;
+									            var radius = size / 2;
+
+									            var linear = context.createLinearGradient(xStart, yStart, xEnd, yEnd);
+									            linear.addColorStop(0, style.fillColor);
+									            linear.addColorStop(0.01, style.spaceColor);
+									            linear.addColorStop(1, style.spaceColor);
+									            context.fillStyle = linear;
+									            context.strokeStyle = style.borderColor;
+									            context.lineWidth = 1;
+									            var x = radius,
+									                y = 0;
+									            for (var i = 0; i < counts; i++) {
+									                context.beginPath();
+									                var x1 = size * Math.sin(Math.PI / 10);
+									                var h1 = size * Math.cos(Math.PI / 10);
+									                var x2 = radius;
+									                var h2 = radius * Math.tan(Math.PI / 5);
+									                context.lineTo(x + x1, y + h1);
+									                context.lineTo(x - radius, y + h2);
+									                context.lineTo(x + radius, y + h2);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x, y);
+									                context.closePath();
+									                context.stroke();
+									                context.fill();
+									                x = (i + 1.5) * size;
+									                y = 0;
+									                context.moveTo(x, y);
+													            }
+													        }
+
+													        var size = 22;
+													        var rating = 1.8;
+													        var counts = 5;
+													        var style = {
+													            borderColor: "#9FE080",
+													            fillColor: "#9FE080",
+													            spaceColor: "#FFFFFF"
+													        };
+
+													        var myCanvas = document.getElementById("myCanvas3");
+													        showRatingStars(myCanvas, rating, counts, size, style);
+
+														    	</script>
+																</td>
+																	<td style="vertical-align:middle; text-align:right;">Unlikely</td>
+																</tr>
+
+
+												<tr>
+													<td style="vertical-align:middle; text-align:left;">@_gl0r1a_0</td>
+													<td style="vertical-align:middle; text-align:left;">40</td>
+													<td style="vertical-align:middle; text-align:left;"><canvas width="150px" height="20px" id="myCanvas4"></canvas>
+														2.9 /5
+												  	<script>
+														  function showRatingStars(myCanvas, rating, counts, size, style) {
+
+									            var context = myCanvas.getContext('2d');
+									            var xStart = rating * size;
+									            var yStart = 0;
+									            var xEnd = (Math.ceil(rating) + 1) * size;
+									            var yEnd = 0;
+									            var radius = size / 2;
+
+									            var linear = context.createLinearGradient(xStart, yStart, xEnd, yEnd);
+									            linear.addColorStop(0, style.fillColor);
+									            linear.addColorStop(0.01, style.spaceColor);
+									            linear.addColorStop(1, style.spaceColor);
+									            context.fillStyle = linear;
+									            context.strokeStyle = style.borderColor;
+									            context.lineWidth = 1;
+									            var x = radius,
+									                y = 0;
+									            for (var i = 0; i < counts; i++) {
+									                context.beginPath();
+									                var x1 = size * Math.sin(Math.PI / 10);
+									                var h1 = size * Math.cos(Math.PI / 10);
+									                var x2 = radius;
+									                var h2 = radius * Math.tan(Math.PI / 5);
+									                context.lineTo(x + x1, y + h1);
+									                context.lineTo(x - radius, y + h2);
+									                context.lineTo(x + radius, y + h2);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x, y);
+									                context.closePath();
+									                context.stroke();
+									                context.fill();
+									                x = (i + 1.5) * size;
+									                y = 0;
+									                context.moveTo(x, y);
+													            }
+													        }
+
+													        var size = 22;
+													        var rating = 2.9;
+													        var counts = 5;
+													        var style = {
+													            borderColor: "#9FE080",
+													            fillColor: "#9FE080",
+													            spaceColor: "#FFFFFF"
+													        };
+
+													        var myCanvas = document.getElementById("myCanvas4");
+													        showRatingStars(myCanvas, rating, counts, size, style);
+
+														    	</script>
+																</td>
+																	<td style="vertical-align:middle; text-align:right;">Unlikely</td>
+																</tr>
+
+
+												<tr>
+													<td style="vertical-align:middle; text-align:left;">@edip29903904</td>
+													<td style="vertical-align:middle; text-align:left;">39</td>
+													<td style="vertical-align:middle; text-align:left;"><canvas width="150px" height="20px" id="myCanvas5"></canvas>
+														2.9 /5
+												 	 <script>
+														  function showRatingStars(myCanvas, rating, counts, size, style) {
+
+									            var context = myCanvas.getContext('2d');
+									            var xStart = rating * size;
+									            var yStart = 0;
+									            var xEnd = (Math.ceil(rating) + 1) * size;
+									            var yEnd = 0;
+									            var radius = size / 2;
+
+									            var linear = context.createLinearGradient(xStart, yStart, xEnd, yEnd);
+									            linear.addColorStop(0, style.fillColor);
+									            linear.addColorStop(0.01, style.spaceColor);
+									            linear.addColorStop(1, style.spaceColor);
+									            context.fillStyle = linear;
+									            context.strokeStyle = style.borderColor;
+									            context.lineWidth = 1;
+									            var x = radius,
+									                y = 0;
+									            for (var i = 0; i < counts; i++) {
+									                context.beginPath();
+									                var x1 = size * Math.sin(Math.PI / 10);
+									                var h1 = size * Math.cos(Math.PI / 10);
+									                var x2 = radius;
+									                var h2 = radius * Math.tan(Math.PI / 5);
+									                context.lineTo(x + x1, y + h1);
+									                context.lineTo(x - radius, y + h2);
+									                context.lineTo(x + radius, y + h2);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x, y);
+									                context.closePath();
+									                context.stroke();
+									                context.fill();
+									                x = (i + 1.5) * size;
+									                y = 0;
+									                context.moveTo(x, y);
+													            }
+													        }
+
+													        var size = 22;
+													        var rating = 2.9;
+													        var counts = 5;
+													        var style = {
+													            borderColor: "#9FE080",
+													            fillColor: "#9FE080",
+													            spaceColor: "#FFFFFF"
+													        };
+
+													        var myCanvas = document.getElementById("myCanvas5");
+													        showRatingStars(myCanvas, rating, counts, size, style);
+
+														    	</script>
+																</td>
+																	<td style="vertical-align:middle; text-align:right;">Unlikely</td>
+																</tr>
+
+
+												<tr>
+													<td style="vertical-align:middle; text-align:left;">@YukselSoganc</td>
+													<td style="vertical-align:middle; text-align:left;">38</td>
+													<td style="vertical-align:middle; text-align:left;"><canvas width="150px" height="20px" id="myCanvas6"></canvas>
+														1.4 /5
+													<script>
+														  function showRatingStars(myCanvas, rating, counts, size, style) {
+
+									            var context = myCanvas.getContext('2d');
+									            var xStart = rating * size;
+									            var yStart = 0;
+									            var xEnd = (Math.ceil(rating) + 1) * size;
+									            var yEnd = 0;
+									            var radius = size / 2;
+
+									            var linear = context.createLinearGradient(xStart, yStart, xEnd, yEnd);
+									            linear.addColorStop(0, style.fillColor);
+									            linear.addColorStop(0.01, style.spaceColor);
+									            linear.addColorStop(1, style.spaceColor);
+									            context.fillStyle = linear;
+									            context.strokeStyle = style.borderColor;
+									            context.lineWidth = 1;
+									            var x = radius,
+									                y = 0;
+									            for (var i = 0; i < counts; i++) {
+									                context.beginPath();
+									                var x1 = size * Math.sin(Math.PI / 10);
+									                var h1 = size * Math.cos(Math.PI / 10);
+									                var x2 = radius;
+									                var h2 = radius * Math.tan(Math.PI / 5);
+									                context.lineTo(x + x1, y + h1);
+									                context.lineTo(x - radius, y + h2);
+									                context.lineTo(x + radius, y + h2);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x, y);
+									                context.closePath();
+									                context.stroke();
+									                context.fill();
+									                x = (i + 1.5) * size;
+									                y = 0;
+									                context.moveTo(x, y);
+													            }
+													        }
+
+													        var size = 22;
+													        var rating = 1.4;
+													        var counts = 5;
+													        var style = {
+													            borderColor: "#9FE080",
+													            fillColor: "#9FE080",
+													            spaceColor: "#FFFFFF"
+													        };
+
+													        var myCanvas = document.getElementById("myCanvas6");
+													        showRatingStars(myCanvas, rating, counts, size, style);
+														    	</script>
+																</td>
+																	<td style="vertical-align:middle; text-align:right;">Unlikely</td>
+																</tr>
+
+
+												<tr>
+													<td style="vertical-align:middle; text-align:left;">@YusufAy30580588</td>
+													<td style="vertical-align:middle; text-align:left;">38</td>
+													<td style="vertical-align:middle; text-align:left;"><canvas width="150px" height="20px" id="myCanvas7"></canvas>
+														1.4 /5
+													<script>
+														  function showRatingStars(myCanvas, rating, counts, size, style) {
+
+									            var context = myCanvas.getContext('2d');
+									            var xStart = rating * size;
+									            var yStart = 0;
+									            var xEnd = (Math.ceil(rating) + 1) * size;
+									            var yEnd = 0;
+									            var radius = size / 2;
+
+									            var linear = context.createLinearGradient(xStart, yStart, xEnd, yEnd);
+									            linear.addColorStop(0, style.fillColor);
+									            linear.addColorStop(0.01, style.spaceColor);
+									            linear.addColorStop(1, style.spaceColor);
+									            context.fillStyle = linear;
+									            context.strokeStyle = style.borderColor;
+									            context.lineWidth = 1;
+									            var x = radius,
+									                y = 0;
+									            for (var i = 0; i < counts; i++) {
+									                context.beginPath();
+									                var x1 = size * Math.sin(Math.PI / 10);
+									                var h1 = size * Math.cos(Math.PI / 10);
+									                var x2 = radius;
+									                var h2 = radius * Math.tan(Math.PI / 5);
+									                context.lineTo(x + x1, y + h1);
+									                context.lineTo(x - radius, y + h2);
+									                context.lineTo(x + radius, y + h2);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x, y);
+									                context.closePath();
+									                context.stroke();
+									                context.fill();
+									                x = (i + 1.5) * size;
+									                y = 0;
+									                context.moveTo(x, y);
+													            }
+													        }
+
+													        var size = 22;
+													        var rating = 1.4;
+													        var counts = 5;
+													        var style = {
+													            borderColor: "#9FE080",
+													            fillColor: "#9FE080",
+													            spaceColor: "#FFFFFF"
+													        };
+
+													        var myCanvas = document.getElementById("myCanvas7");
+													        showRatingStars(myCanvas, rating, counts, size, style);
+
+										    	</script>
+													</td>
+													<td style="vertical-align:middle; text-align:right;">Unlikely</td>
+												</tr>
+
+
+												<tr>
+													<td style="vertical-align:middle; text-align:left;">@demirmadeni</td>
+													<td style="vertical-align:middle; text-align:left;">36</td>
+													<td style="vertical-align:middle; text-align:left;"><canvas width="150px" height="20px" id="myCanvas8"></canvas>
+														3.2 /5
+													 <script>
+														  function showRatingStars(myCanvas, rating, counts, size, style) {
+
+									            var context = myCanvas.getContext('2d');
+									            var xStart = rating * size;
+									            var yStart = 0;
+									            var xEnd = (Math.ceil(rating) + 1) * size;
+									            var yEnd = 0;
+									            var radius = size / 2;
+
+									            var linear = context.createLinearGradient(xStart, yStart, xEnd, yEnd);
+									            linear.addColorStop(0, style.fillColor);
+									            linear.addColorStop(0.01, style.spaceColor);
+									            linear.addColorStop(1, style.spaceColor);
+									            context.fillStyle = linear;
+									            context.strokeStyle = style.borderColor;
+									            context.lineWidth = 1;
+									            var x = radius,
+									                y = 0;
+									            for (var i = 0; i < counts; i++) {
+									                context.beginPath();
+									                var x1 = size * Math.sin(Math.PI / 10);
+									                var h1 = size * Math.cos(Math.PI / 10);
+									                var x2 = radius;
+									                var h2 = radius * Math.tan(Math.PI / 5);
+									                context.lineTo(x + x1, y + h1);
+									                context.lineTo(x - radius, y + h2);
+									                context.lineTo(x + radius, y + h2);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x, y);
+									                context.closePath();
+									                context.stroke();
+									                context.fill();
+									                x = (i + 1.5) * size;
+									                y = 0;
+									                context.moveTo(x, y);
+													            }
+													        }
+
+													        var size = 22;
+													        var rating = 3.2;
+													        var counts = 5;
+													        var style = {
+													            borderColor: "#FEDB5F",
+													            fillColor: "#FEDB5F",
+													            spaceColor: "#FFFFFF"
+													        };
+
+													        var myCanvas = document.getElementById("myCanvas8");
+													        showRatingStars(myCanvas, rating, counts, size, style);
+
+																</script>
+																</td>
+																<td style="vertical-align:middle; text-align:right;">Likely</td>
+																</tr>
+
+
+												<tr>
+													<td style="vertical-align:middle; text-align:left;">@ibrahim7039</td>
+													<td style="vertical-align:middle; text-align:left;">35</td>
+													<td style="vertical-align:middle; text-align:left;"><canvas width="150px" height="20px" id="myCanvas9"></canvas>
+														4.1 /5
+													 <script>
+														  function showRatingStars(myCanvas, rating, counts, size, style) {
+
+									            var context = myCanvas.getContext('2d');
+									            var xStart = rating * size;
+									            var yStart = 0;
+									            var xEnd = (Math.ceil(rating) + 1) * size;
+									            var yEnd = 0;
+									            var radius = size / 2;
+
+									            var linear = context.createLinearGradient(xStart, yStart, xEnd, yEnd);
+									            linear.addColorStop(0, style.fillColor);
+									            linear.addColorStop(0.01, style.spaceColor);
+									            linear.addColorStop(1, style.spaceColor);
+									            context.fillStyle = linear;
+									            context.strokeStyle = style.borderColor;
+									            context.lineWidth = 1;
+									            var x = radius,
+									                y = 0;
+									            for (var i = 0; i < counts; i++) {
+									                context.beginPath();
+									                var x1 = size * Math.sin(Math.PI / 10);
+									                var h1 = size * Math.cos(Math.PI / 10);
+									                var x2 = radius;
+									                var h2 = radius * Math.tan(Math.PI / 5);
+									                context.lineTo(x + x1, y + h1);
+									                context.lineTo(x - radius, y + h2);
+									                context.lineTo(x + radius, y + h2);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x, y);
+									                context.closePath();
+									                context.stroke();
+									                context.fill();
+									                x = (i + 1.5) * size;
+									                y = 0;
+									                context.moveTo(x, y);
+													            }
+													        }
+
+													        var size = 22;
+													        var rating = 4.1;
+													        var counts = 5;
+													        var style = {
+													            borderColor: "#FEDB5F",
+													            fillColor: "#FEDB5F",
+													            spaceColor: "#FFFFFF"
+													        };
+
+													        var myCanvas = document.getElementById("myCanvas9");
+													        showRatingStars(myCanvas, rating, counts, size, style);
+
+																	</script>
+															  	</td>
+																			<td style="vertical-align:middle; text-align:right;">Likely</td>
+																	</tr>
+
+
+												<tr>
+													<td style="vertical-align:middle; text-align:left;">@maskesizprime</td>
+													<td style="vertical-align:middle; text-align:left;">32</td>
+													<td style="vertical-align:middle; text-align:left;"><canvas width="150px" height="20px" id="myCanvas10"></canvas>
+														1.3 /5
+													  <script>
+														  function showRatingStars(myCanvas, rating, counts, size, style) {
+
+									            var context = myCanvas.getContext('2d');
+									            var xStart = rating * size;
+									            var yStart = 0;
+									            var xEnd = (Math.ceil(rating) + 1) * size;
+									            var yEnd = 0;
+									            var radius = size / 2;
+
+									            var linear = context.createLinearGradient(xStart, yStart, xEnd, yEnd);
+									            linear.addColorStop(0, style.fillColor);
+									            linear.addColorStop(0.01, style.spaceColor);
+									            linear.addColorStop(1, style.spaceColor);
+									            context.fillStyle = linear;
+									            context.strokeStyle = style.borderColor;
+									            context.lineWidth = 1;
+									            var x = radius,
+									                y = 0;
+									            for (var i = 0; i < counts; i++) {
+									                context.beginPath();
+									                var x1 = size * Math.sin(Math.PI / 10);
+									                var h1 = size * Math.cos(Math.PI / 10);
+									                var x2 = radius;
+									                var h2 = radius * Math.tan(Math.PI / 5);
+									                context.lineTo(x + x1, y + h1);
+									                context.lineTo(x - radius, y + h2);
+									                context.lineTo(x + radius, y + h2);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x - x1, y + h1);
+									                context.lineTo(x, y);
+									                context.closePath();
+									                context.stroke();
+									                context.fill();
+									                x = (i + 1.5) * size;
+									                y = 0;
+									                context.moveTo(x, y);
+													            }
+													        }
+
+													        var size = 22;
+													        var rating = 1.3;
+													        var counts = 5;
+													        var style = {
+													            borderColor: "#9FE080",
+													            fillColor: "#9FE080",
+													            spaceColor: "#FFFFFF"
+													        };
+
+													        var myCanvas = document.getElementById("myCanvas10");
+													        showRatingStars(myCanvas, rating, counts, size, style);
+
+														    	</script></td>
+													        <td style="vertical-align:middle; text-align:right;">Unlikely</td>
+																	</tr>
+																</tbody>
+															<tfoot>
+
+
+												<!-- <tr>
+													<td colspan="2"></td>
+													<td style="vertical-align:middle; text-align:left;">Total 3 bots</td>
+												</tr>
+											</tfoot> -->
+										</table>
+									</div>
+
+<hr />
+
+								<h3>TOP 10 RETWEETED TWEETS</h3>
+					<dd>
+						<p>Of the top 10 enthusiastically retweeted tweets, the first three came from the same person, @Aliosmanonder34, a Turkish journalist. With 65.4K followers, he ranks no. 1 in the number of followers; In second place is @PirireisBudak11, who has 15.3k followers and wrote the fifth tweet in the top 10 retweets list; At number three is @Egtmhaberleri25, who has 10.4K followers and is the ninth tweet in the top 10 retweets list. It is worth mentioning that @Egtmhaberleri25 is an active Tweeter,he ranking first in the total number of tweets in the top ten list. Since he joined Twitter in February 2021, he has posted 32.3K tweets, which is an average of about 3,000 tweets per month and about 100 tweets per day. <br /> Also, at the bottom of the fans list is @DrDentinsta, who only has 133 followers, but is the fourth most retweeted, right behind the Turkish journalists.</p>
+          </dd>
+					<!-- 在被热情转发的前10条推文中，前三条来自于同一个人aliosmanonder34，一个土耳其的记者。他拥有65.4k粉丝，粉丝数量排名第一;排名第二的是pirireisbudak11他拥有15.3K粉丝，他撰写的推文在前十转发榜中排名第五;排名第三的是Egtmhaberleri25他拥有10.4K粉丝，他撰写的推文在前十转发榜中排名第九。值得一提的是他是个活跃的推特经营者，他的推文总数在前十榜中排名第一。自从他2021年2月加入推特至今，他已发布32.3K条推文,平均每个月发布约3000条的推文，每天发布约100条推文。<br />此外，推特粉丝数量排名倒数第一的是DrDentinsta，他只有133个粉丝，但他推文转发率排名第四，紧跟在土耳其记者之后。 -->
+<br />
+
+									<div class="table-wrapper">
+										<table class="alt">
+
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Content</th>
+													<th>Times</th>
+													<th>Followers</th>
+													<th>Friends</th>
+													<th style="text-align:right;">Total Tweets</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr >
+													<td style="vertical-align:top; text-align:left;">@aliosmanonder34</td>
+													<td style="vertical-align:middle; text-align:left; line-height: 30px;"> Küçük çocuk yazdığı günlüğü göstermiş annesine. Sınıfta maske takmayan çocuğu çöpün yanına oturtmak nedir ya? Ruh hastası mısınız? Maskeye tapan bir güruh oluştu. Ağızlarından atmadıkları gibi küçücük çocukları azarlayıp mikrop muame.</td>
+													<td style="vertical-align:middle; text-align:center;">625</td>
+													<td style="vertical-align:middle; text-align:center;">65.4K</td>
+													<td style="vertical-align:middle; text-align:center;">27</td>
+													<td style="vertical-align:middle; text-align:center;">2118</td>
+												</tr>
+												<tr>
+													<td style="vertical-align:top; text-align:left;">@aliosmanonder34</td>
+													<td style="vertical-align:middle; text-align:left;line-height: 30px;">Demek ki hamileydi. Deltayla Omicron birleşmiş "Delmicron" doğmuş. Yeni varyanta öyle diyorlar. İnsanları sıvıya koşturup aptal yerine koymak bu olsa gerek. PCR TESTİ değil ZEKA TESTİ lazım. Her yere girişte PCR istemek yerine ZEKA TESTİ istenmeli. Dalga geçiyorlar. #Delmicron.</td>
+													<td style="vertical-align:middle; text-align:left;">495</td>
+													<td style="vertical-align:middle; text-align:center;">65.4K</td>
+													<td style="vertical-align:middle; text-align:center;">27</td>
+													<td style="vertical-align:middle; text-align:center;">2118</td>
+
+												</tr>
+												<tr>
+													<td style="vertical-align:top; text-align:left;">@aliosmanonder34</td>
+													<td style="vertical-align:middle; text-align:left;line-height: 30px;"> Omicron gece uykudan uyandırıyormuş. Sanki grip, nezle, zatürre, influenza olunca gece pamuk gibiydiniz. Algı böyle bir şey. Önce korku ver. Sanki 2 sene önce hastalık yoktu. Her hastaya covid, her ölene covid. Kutsal sıvılar da zıplatıyormuş. Varyantta doğum yaptı. #Delmicron 😊.</td>
+													<td style="vertical-align:middle; text-align:left;">426</td>
+													<td style="vertical-align:middle; text-align:center;">65.4K</td>
+													<td style="vertical-align:middle; text-align:center;">27</td>
+													<td style="vertical-align:middle; text-align:center;">2118</td>
+												</tr>
+												<tr>
+													<td style="vertical-align:top; text-align:left;"> @DrDentinsta</td>
+													<td style="vertical-align:middle; text-align:left;line-height: 30px;">#Delta and #Omicron got married and blessed with a baby #Delmicron https://t.co/aSnqPryH7Y.</td>
+													<td style="vertical-align:middle; text-align:left;">334</td>
+													<td style="vertical-align:middle; text-align:center;">133</td>
+													<td style="vertical-align:middle; text-align:center;">221</td>
+													<td style="vertical-align:middle; text-align:center;">246</td>
+												</tr>
+												<tr>
+													<td style="vertical-align:top; text-align:left;">@pirireisbudak11</td>
+													<td style="vertical-align:middle; text-align:left;line-height: 30px;">Burası, Suudi Arabistan’ın başkenti #Riyad’tan. Bu güne kadar ki en büyük festival. Tam 732 bin katılımcılı.
+													Virüs ya müslümanın cenazesinde oluyor, ya da	Camisinde ?	Sen kâbeyi virüs var diye Kapat!
+													Git Riyad'da çılgınlar gibi eğlence yap	https://t.co/hnAnTMImDX	#Delmicron.</td>
+
+													<td style="vertical-align:middle; text-align:left;">324</td>
+													<td style="vertical-align:middle; text-align:center;">15.3k</td>
+													<td style="vertical-align:middle; text-align:center;">967</td>
+													<td style="vertical-align:middle; text-align:center;">12.2k</td>
+												</tr>
+												<tr>
+													<td style="vertical-align:top; text-align:left;">@aliosmanonder34</td>
+													<td style="vertical-align:middle; text-align:left;line-height: 30px;">Gerçekleri şeffaf bir şekilde anlatan hekimlerimizi dinleselerdi, ekranda karşılarına alsalardı bu noktaya gelinmezdi. Aylar önce ve daha da öncesinden hep anlattık. İnsanları sıvılara koşturup yeni varyantlar uydurmaya da devam ediyorlar. #Delmicron @agsahan1 @buyukbulusmaplt https://t.co/W2p6pFTph3.</td>
+													<td style="vertical-align:middle; text-align:left;">280</td>
+													<td style="vertical-align:middle; text-align:center;">65.4k</td>
+													<td style="vertical-align:middle; text-align:center;">27</td>
+													<td style="vertical-align:middle; text-align:center;">2118</td>
+												</tr>
+												<tr>
+													<td style="vertical-align:top; text-align:left;">@ogrencicamiasi</td>
+													<td style="vertical-align:middle; text-align:left;line-height: 30px;">🚨MEB Personel;Omicron panikletti,#OnlineEğitim  kararları gelmeye başladı !#Delmicron.</td>
+													<td style="vertical-align:middle; text-align:left;">222</td>
+													<td style="vertical-align:middle; text-align:center;">4382</td>
+													<td style="vertical-align:middle; text-align:center;">3646</td>
+													<td style="vertical-align:middle; text-align:center;">2693</td>
+												</tr>
+												<tr>
+													<td style="vertical-align:top; text-align:left;">@sma_sare</td>
+													<td style="vertical-align:middle; text-align:left;line-height: 30px;">Sare'mn artık dayanacak gücü kalmadı
+													Ne olur yardım edin bitirelim kampanyamızı.
+													Sare de tedavisine ulaşsın
+													Lütfen görmezden gelmeyin.
+													UEFA #Delmicron Binance EKREM İSTİFA Mehmet Ali Aydınlar Emin Çapa Edis Atiba Güldem Atabay Selçuk Geçer Real Madrid Franz Kafka Zümra YANINDAYIZ https://t.co/lSv28ZlXcY.</td>
+													<td style="vertical-align:middle; text-align:left;">216</td>
+													<td style="vertical-align:middle; text-align:center;">1717</td>
+													<td style="vertical-align:middle; text-align:center;">1321</td>
+													<td style="vertical-align:middle; text-align:center;">5554</td>
+												</tr>
+												<tr>
+													<td style="vertical-align:top; text-align:left;">@Egtmhaberleri25</td>
+													<td style="vertical-align:middle; text-align:left;line-height: 30px;">🟠Yeni çifte varyant olan #Delmicron'un hem Delta varyantı hem de Omicron varyantından oluştuğu belirtildi. #OnlineEğitim.</td>
+													<td style="vertical-align:middle; text-align:left;">212</td>
+													<td style="vertical-align:middle; text-align:center;">10.4k</td>
+													<td style="vertical-align:middle; text-align:center;">10</td>
+													<td style="vertical-align:middle; text-align:center;">32.3k</td>
+												</tr>
+												<tr>
+													<td style="vertical-align:top; text-align:left;">@fatihvural45</td>
+													<td style="vertical-align:middle; text-align:left;line-height: 30px;">Yeni varyant haberini alınca aklıma bu geldi 😊#Delmicron https://t.co/K2xslgXpCv.</td>
+													<td style="vertical-align:middle; text-align:left;">204</td>
+													<td style="vertical-align:middle; text-align:center;">141</td>
+													<td style="vertical-align:middle; text-align:center;">130</td>
+													<td style="vertical-align:middle; text-align:center;">412</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+
+<hr />
+<!-- bar chart of followers and friends-->
+				<h3>Demographic Grouping</h3>
+							<dd><p>
+							After taking a look at some of the detailed tweeting data of the 10 users above, let's analyse the characteristics of the followers and friends of all Twitter users for the entire period from 27 December to 4 January. From the pie charts below, we can clearly see a pyramidal structure, with 67.36% and 66.47% of users having a follower and friend count between 1 and 500, which is the first tier at the bottom, and the second tier with 27.55% and 29.18% of users having a follower count between 500 and 1000 respectively. The 3rd gradient is the number of fans and friends above 50k, the number that can be reached is then very small but they still account for 4.38% and 2.91% respectively, and from this gradient onwards there is only one person, the official account @ABPNews with 10 million followers. There are also a few users with blank in the number of friends and followers, who also account for 0.68% and 1.43% respectively.<br/></p></dd>
+
+			       <dd>
+					<div style="width: 410px; height: 400px; float: left;">
+						<h4 style="margin: 0px; line-height: 2px;">friends</h4>
+							<div id="pied2" style="width:100%; height: 100%;" ></div>
+									<script type="text/javascript">
+
+											var myChart = echarts.init(document.getElementById('pied2'));
+											var app = {};
+
+											var option;
+											option = {
+											  tooltip: {
+											    trigger: 'item'
+											  },
+												// legend: {
+										  	// bottom: '2',
+											  // },
+											  series: [
+											    {
+											      name: 'Friends',
+											      type: 'pie',
+											      radius: ['30%', '50%'],
+											      avoidLabelOverlap: false,
+
+														label: {
+										        show: true,
+										        position: 'outside',
+					                  formatter: "{d}%",
+					                  textStyle: {
+					                  color: '#000000',
+														fontSize: '12'
+														}
+										      },
+
+										      labelLine: {
+										        show: true
+												      },
+											      data: [
+												      { value: 64, name: 'zero' },
+											        { value: 6337, name: '1-500' },
+															{ value: 2594, name: '500-5k' },
+															{ value: 412, name: '5k-100k' },
+															{ value: 3, name: '>500k' },
+															{ value: 0, name: '>1000k' },
+											      ]
+											    }
+											  ]
+											};
+				             option && myChart.setOption(option);
+									</script>
+				</div>
+
+				<div style="width: 410px; height: 400px; float: right;">
+						<h4 style="margin: 0px; line-height: 2px;">followers</h4>
+								<div id="pied1" style="width:100%; height: 100%;" ></div>
+									<script type="text/javascript">
+
+											var myChart = echarts.init(document.getElementById('pied1'));
+											var app = {};
+
+											var option;
+											option = {
+											  tooltip: {
+											    trigger: 'item'
+											  },
+												// legend: {
+										  	// bottom: '2',
+											  // },
+
+											  series: [
+											    {
+											      name: 'Followers',
+											      type: 'pie',
+											      radius: ['30%', '50%'],
+											      avoidLabelOverlap: false,
+											        label: {
+											        show: true,
+											        position: 'outside',
+						                  formatter: "{d}%",
+						                  textStyle: {
+						                  color: '#000000',
+															fontSize: '12'
+															}
+											      },
+											      labelLine: {
+											        show: true
+											      },
+											      data: [
+												      { value: 126, name: 'zero' },
+											        { value: 6255, name: '1-500' },
+															{ value: 2474, name: '500-5k' },
+															{ value: 546, name: '5k-100k' },
+															{ value: 8, name: '>500k' },
+															{ value: 1, name: '>1000k' },
+											      ]
+											    }
+											  ]
+											};
+				             option && myChart.setOption(option);
+									</script>
+								</div>
+							</dd>
+
+<div class="height: 400px;">
+								<dd><p>Analyzing it in more detail, I found that at the first level interval, because of the large data base, the total number of followers counted from 1 to 500 is 100% coherent. By that I mean pick any number from 1-500 and I will find the followers count for that. One step up the ladder, the coherence is not so strong. Follower counts ending in 5 and 7 are the most likely to be missing. By the third gradient, the follower data is highly unique and no one has the same number of followers anymore.</p></dd>
+</div>
+						<!-- 更详细一些分析，我发现在第一级别区间时，因为数据基数大，粉丝总数从1数到500，连贯性达到了100%。我的意思是从1-500中间随便选一个数字，你都能找到这个的follower总数。再往上一个梯度，连贯性则不那么强了。粉丝数量尾数为5和7的数据是最容易缺失的。到了第三梯度，粉丝数据具有很强的独特性，不再有任何人的粉丝数量是相同的。 -->
+<!-- bar chart to analysis -->
+            <div>
+							<div id="barf" style="width:100%; height: 400px;" ></div>
+							<script type="text/javascript">
+
+									var myChart = echarts.init(document.getElementById('barf'));
+									var app = {};
+									option = {
+								  title: {
+								    text: ''
+								  },
+								  tooltip: {
+								    trigger: 'axis',
+								    },
+								  legend: {
+								    data: ['Friends', 'Followers']
+								  },
+									grid: {
+								    left: '3%',
+								    right: '4%',
+								    bottom: '3%',
+								    containLabel: true
+								  },
+								  xAxis: {
+								    type: 'category',
+								    data: ['0','<100','100-500','500-1000','1000-5000','5000-10k','10k-50k','50k-100k',
+								'100k-500k','500k-1000k','>1 million','>10 million']
+								  },
+								  yAxis: {
+								    type: 'value'
+								  },
+								  series: [
+								    {
+								      name: 'Followers',
+								      type: 'bar',
+								      label: {
+								      show: true,
+								      position: 'top'
+								      },
+								      data: [126,3388,2834,958,1516,272,222,31,21,5,3,1]
+								    },
+								    {
+								      name: 'Friends',
+								      type: 'bar',
+								      label: {
+								      show: true,
+								      position: 'top'
+								      },
+								      data:['64','2204','3420','1404','1190','282','0', '0', '0','0','0','0']
+								    }
+								  ]
+								};
+
+								option && myChart.setOption(option);
+							</script>
+						</div>
+
+						<br />
+						<dd>
+						<p>Of all of them, one with the id @atabenli is a person attracts my particularly attention. This is because he has more than a million Followers and Friends. In particular he has 1.2M followers, second only to official accounts like @IndiaToday and @IndiaTodayFLASH. He joined Twitter in May 2011 from Istanbul, Turkey, where he used to work as an interior designer, and currently has a total of 61.2k tweets. <br />But one thing need to think about is that as of 16 January 2022, his follower count was 1294690, 215377 more than the 1079313 counted on 28 December 2021; he has grown by an average of about 10256 followers per day in the last 20 days. Despite the high follower count and the rapid growth in followers each day, most of his tweets only garner an average of 300-400 likes and ten digit or single digit comments. It is has to suspect that most of his followers are all bots.</p>
+					</dd>
+					<div align="center">
+						<blockquote class="twitter-tweet"><p lang="tr" dir="ltr">Şimdiye kadar ki en kötü varyant <a href="https://twitter.com/hashtag/Delmicron?src=hash&amp;ref_src=twsrc%5Etfw">#Delmicron</a></p>&mdash; Ata Benli (@atabenli) <a href="https://twitter.com/atabenli/status/1475508372002779138?ref_src=twsrc%5Etfw">December 27, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+					<dd>
+						<p>For example, his tweet about delmicron arguing that this kind of new virus is Worst variant ever received only 55 Retweets; 10 Quote Tweets and 740 Likes. for the average person, these figures are great. But for a blogger with a million followers, such an impact is far from commensurate with his number of followers.</p>
+					</dd>
+					<!-- 在所有的人中，有一个id为@atabenli的人尤为值得注意。因为他的Followers和Friends数量都超过一百万。尤其他的粉丝数量有1.2M，仅次于@IndiaToday和@IndiaTodayFLASH这样的官方账号。他在2011年May加入Twitter，来自于İstanbul, Türkiye，他原来的职业是一名室内设计师，目前他总共发布了61.2k条推文。但是值得人深思的一件事情是截止至2022年1月16日，他的粉丝数量为1294690，比2021年12月28日统计到的1079313高出了215377个粉丝，在过去的这20天内他平均每天增长约10256个粉丝。虽然粉丝数量很高且每天都粉丝数量增长的也很快，但是他发的大部分推文平均只能收获到300-400个喜欢，以及十位数或者个位数的评论。不得不怀疑，他的粉丝都是机器人。 -->
+					<!-- 例如，他发表的有关delmicron的推文认为#Delmicron是Worst variant ever，只收到了55个 Retweets；10 Quote Tweets以及740 Likes。对于普通人来说，这些数据很不错。但是对于一个百万粉丝的博主，这样的影响力远远和他的粉丝数量不相符合。 -->
+<hr />
+
+<!-- pie chart -->
+          <h3>Location</h3>
+					<dd>
+					<p>As can be seen from the pie chart on the left, 67.41 percent of users do not carry their geographical location when tweeting, but 40 percent of users carry their geographical location.<br />After sifting through the PivotTable, turkey ranked first with 3,576 in 4972 locational markers with a frequency greater than 1, and followed by India with 286. There are other countries that are in small numbers, and I put them in the Other category.</p>
+					</dd>
+					<!-- 从左边的pie chart中我们可以看出百分之67.41的用户在发推文时没有携带地理位置,但有40%的用户携带着自己的地理位置，约6001人。 -->
+					<!-- 在经过数据透视表的筛选过后，在地理位置出现频率大于1的4972次位置标记中，土耳其出现了3576次排名第一，其次是印度出现286次排名第二.另外还有其他国家出现次数较少，我把他们归在了other类别里。 -->
+<!-- pie chart -->
+		<div class="twitter">
+			<div class="twitter1">
+				<h4>GEO-LOCATION ALLOWED?</h4>
+							<div id="pie" style="width:100%; height: 400px;" ></div>
+							<script type="text/javascript">
+
+									var myChart = echarts.init(document.getElementById('pie'));
+									var app = {};
+
+									var option;
+									option = {
+									  tooltip: {
+									    trigger: 'item'
+									  },
+									  legend: {
+									    top: '380',
+									    left: 'center'
+									  },
+									  series: [
+									    {
+									      name: '',
+									      type: 'pie',
+									      radius: ['30%', '50%'],
+									      avoidLabelOverlap: false,
+									      // label: {
+									      //   show: false,
+									      //   position: 'center'
+									      // },
+												label: {
+								        show: true,
+								        position: 'outside',
+			                  formatter: "{d}%",
+			                  textStyle: {
+			                  color: '#000000',
+												fontSize: '12'
+												}
+								      },
+
+								      labelLine: {
+								        show: true
+										      },
+									      data: [
+										      { value: 12414, name: 'Geolocation Off' },
+									        { value: 6001, name: 'Geolocation On' },
+									      ]
+									    }
+									  ]
+									};
+		             option && myChart.setOption(option);
+							</script>
+		</div>
+
+		<div class="twitter2">
+			<h4>High frequency countries</h4>
+							<div id="pie2" style="width:100%; height: 400px;" ></div>
+							<script type="text/javascript">
+
+									var myChart = echarts.init(document.getElementById('pie2'));
+									var app = {};
+
+									var option;
+									option = {
+									  tooltip: {
+									    trigger: 'item'
+									  },
+									  legend: {
+									    top: '380',
+									    left: 'center'
+									  },
+									  series: [
+									    {
+									      name: '',
+									      type: 'pie',
+									      radius: ['30%', '50%'],
+									      avoidLabelOverlap: false,
+									      // label: {
+									      //   show: false,
+									      //   position: 'center'
+													label: {
+									        show: true,
+									        position: 'outside',
+				                  formatter: "{d}%",
+				                  textStyle: {
+				                  color: '#000000',
+													fontSize: '12'
+													}
+									      },
+
+									      labelLine: {
+									        show: true
+									      },
+									      data: [
+													{ value: 3576, name: 'Turkey' },
+									        { value: 286, name: 'India' },
+													{ value: 42, name: 'France' },
+													{ value: 41, name: 'USA' },
+									        { value: 1027, name: 'Other' },
+									      ]
+									    }
+									  ]
+									};
+		             option && myChart.setOption(option);
+							</script>
+						</div>
+					</div>
+
+
+<hr />
+				        <h4>High frequency cities of Turkey</h4>
+									<dd>
+									<p>As can be seen from the bar chart, Istanbul, capital of Turkey, is the place with the highest frequency of occurrence among all the cities under this topic, which is about 1184 times. It was about 3.6 times more frequent than Ankara (329), the second most frequent city, and 40 times more frequent than Osmaniye (30), the 10th most frequent city.</p>
+									</dd>
+									<!-- 从该bar chart中我们可以看到土耳其伊首都斯坦布尔是在该话题下的所有城市中出现次数最高的地方，出现约为1184次。它出现的次数是排名第二的城市Ankara（329次）的3.6倍左右，是排名第十的城市Osmaniye（30次）的40倍. -->
+
+<!-- Bar chart of Top 10 cities -->
+
+				<div id="bar2" style="width:100%; height: 400px;" ></div>
+					<script type="text/javascript">
+
+							var myChart = echarts.init(document.getElementById('bar2'));
+							var app = {};
+							var option;
+
+							option = {
+							  title: {
+							    text: ''
+							  },
+							  tooltip: {
+							    trigger: 'axis',
+							    axisPointer: {
+							      type: 'shadow'
+							    }
+							  },
+							  legend: {},
+							  grid: {
+							    left: '3%',
+							    right: '4%',
+							    bottom: '3%',
+							    containLabel: true
+							  },
+							  xAxis: {
+							    type: 'value',
+							    boundaryGap: [0, 0.01]
+							  },
+							  yAxis: {
+						    type: 'category',
+						    data: [
+						      'Osmaniye, Türkiye',
+						      'Muş, Türkiye',
+						      'Gaziantep, Türkiye',
+						      'Konya, Türkiye',
+						      'Adana, Türkiye',
+									// 'New Delhi, India',
+						      'Antalya, Türkiye',
+						      'Bursa, Türkiye',
+						      'İzmir, Türkiye',
+						      'Ankara, Türkiye',
+						      'İstanbul, Türkiye'
+						    ]
+						  },
+
+						  series: [
+						    {
+						      type: 'bar',
+									label: {
+								     show: true,
+								     position: 'right'
+								    },
+						      data: [30, 31, 37, 38, 44,
+									// 	{
+									// 	  value: 51,
+					        //     itemStyle: {
+					        //     color: '#9FE080'
+					        //   }
+					        // },
+									79, 158, 303, 329, 1184]
+						    },
+						  ]
+						};
+							option && myChart.setOption(option);
+   </script>
+
+<hr />
+				        <h3>DISCOURSE</h3>
+									<dd>
+									<p>Obviously, from the chart below we can see that among all the words Turkish is the most dominant language, followed by English. The hashtag #Omicron, #delta, #Covid, #Covid_19, etc. also appear in the tweets along with #delmicron, so they make up a large part of the tweets. In addition, a small number of users use hashtags such as #HappyNewYear2022, #HappyNewYear, etc. Besides, the second most frequent words are mainly Turkish words 'varyant', 'delmicronrt', 'sehir', 'yeni', 'daha', 'olur', etc. Their English meanings are 'variant', 'delmicron', 'city', 'The new', 'more and more', 'possible'.</p>
+									</dd>
+									<!-- 显而易见，从下图中我们可以看出在所有的词中土耳其语是最主要的语言，其次是英语。与#delmicron一同出现在推文里的hashtag还有#Omicron，#delta，#Covid，#Covid_19等,因此他们占了很大的比重。除此之外，有少量用户使用#HappyNewYear2022, #HappyNewYear等hashtag。其次，出现频率较高的土耳其词汇有'varyant','delmicronrt','sehir','yeni','daha','olur',等他们的英文意思分别是'variant'，'delmicron'，’city‘，‘The new’，‘More and more’，‘possible’。 -->
+
+  </dl>
+<!-- wordcloud -->
+									<!-- <div style='width:100%;height:500px;'>
+
+									  <script type='text/javascript' src='https://worditout.com/word-cloud/4951587/embed.js'></script>
+									  <noscript>
+									    <p style='text-align:center;font-size:xx-small;overflow:auto;height:100%;'><a href='https://worditout.com/word-cloud/4951587' title='Click to go to this word cloud on WordItOut.com'>&quot;&quot;</a><br />
+									    Click on the link above to see this word cloud at <a href='https://worditout.com' title='Transform your text into word clouds!'>WordItOut</a>. You may also view it on this website if you enable JavaScript (see your web browser settings).</p>
+									  </noscript>
+									</div> -->
+									<div style="width:100%;height:500px;">
+	                  <!-- <a href="https://www.wordclouds.com/?yygpKSi20tfP1MvMTS8t0kvOz9VPN68qCszw1yvISwcA" target="_blank"> -->
+										<img src="https://i.imgur.com/C2OGrCz.png" width="550px" alt="000"></a>
+									</div>
+
+<hr />
+<hr />
+
+<!-- Conclusion -->
+									<h2>Conclusion</h2>
+									<div class="box">
+										<p>With this data analysis, it's easy to see that the #delmicron topic is being discussed mainly in Turkey. As of January 17, 2022, people are no longer interested in the topic and delmicron is gradually fading out of the limelight. In any case, let's hope that the epidemic will soon be over and we will have a tomorrow free from worry.</p>
+									</div>
+								<br />
+								<br />
+								<br />
+<!-- back button -->
+										<div class="buttoncenter">
+										<!-- <div style="#9FE080",> -->
+												<a href="#" class="button primary fit">Back to the top </a>
+										</div>
+<!-- icons -->
+								<br />
+								<br />
+
+
+								<div>
+							  	<ul class="icons alt">
+									<li><a href="https://twitter.com/ShiyuanChen914" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=100074371701320" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://instagram.com/chenshiyuan6431" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/schen006" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+								</div>
+
+					</div>
+
+
+
+
+					<div id="copyright">
+						<ul><li>Shiyuan Chen</li><li>GitHub: <a href="https://github.com/schen006">Course work2</a></li></ul>
+					</div>
+
+			</div>
+
+
+
+<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
